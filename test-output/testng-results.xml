@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="1" failed="3" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-07-23T19:20:29 IST" name="Suite" finished-at="2023-07-23T19:20:45 IST" duration-ms="15974">
+    <groups>
+      <group name="submitorder">
+        <method signature="StandAloneTest.submitordertest(java.util.HashMap)[pri:0, instance:p1.StandAloneTest@648c94da]" name="submitordertest" class="p1.StandAloneTest"/>
+      </group> <!-- submitorder -->
+      <group name="Errorhandle">
+        <method signature="errorvalidation.LoginErrorValidation()[pri:0, instance:p1.errorvalidation@64b73e7a]" name="LoginErrorValidation" class="p1.errorvalidation"/>
+      </group> <!-- Errorhandle -->
+    </groups>
+    <test started-at="2023-07-23T19:20:29 IST" name="Error" finished-at="2023-07-23T19:20:45 IST" duration-ms="15387">
+      <class name="p1.errorvalidation">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:p1.errorvalidation@64b73e7a]" started-at="2023-07-23T19:20:29 IST" name="LaunchApplication" finished-at="2023-07-23T19:20:36 IST" duration-ms="6393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="LoginErrorValidation()[pri:0, instance:p1.errorvalidation@64b73e7a]" started-at="2023-07-23T19:20:36 IST" name="LoginErrorValidation" finished-at="2023-07-23T19:20:37 IST" duration-ms="973" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Incorrect email or password.] but found [Incorrect email  password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrect email  password.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at p1.errorvalidation.LoginErrorValidation(errorvalidation.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginErrorValidation -->
+        <test-method is-config="true" signature="closedDriver()[pri:0, instance:p1.errorvalidation@64b73e7a]" started-at="2023-07-23T19:20:38 IST" name="closedDriver" finished-at="2023-07-23T19:20:38 IST" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedDriver -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:p1.errorvalidation@64b73e7a]" started-at="2023-07-23T19:20:38 IST" name="LaunchApplication" finished-at="2023-07-23T19:20:41 IST" duration-ms="3481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="ProductErrorvalidation()[pri:0, instance:p1.errorvalidation@64b73e7a]" started-at="2023-07-23T19:20:41 IST" name="ProductErrorvalidation" finished-at="2023-07-23T19:20:44 IST" duration-ms="2954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProductErrorvalidation -->
+        <test-method is-config="true" signature="closedDriver()[pri:0, instance:p1.errorvalidation@64b73e7a]" started-at="2023-07-23T19:20:44 IST" name="closedDriver" finished-at="2023-07-23T19:20:45 IST" duration-ms="353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedDriver -->
+      </class> <!-- p1.errorvalidation -->
+    </test> <!-- Error -->
+    <test started-at="2023-07-23T19:20:29 IST" name="SubmitOrder" finished-at="2023-07-23T19:20:45 IST" duration-ms="15974">
+      <class name="p1.StandAloneTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:p1.StandAloneTest@648c94da]" started-at="2023-07-23T19:20:30 IST" name="LaunchApplication" finished-at="2023-07-23T19:20:36 IST" duration-ms="6052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="submitordertest(java.util.HashMap)[pri:0, instance:p1.StandAloneTest@648c94da]" started-at="2023-07-23T19:20:36 IST" name="submitordertest" data-provider="getData" finished-at="2023-07-23T19:20:39 IST" duration-ms="3207" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=123@Khan, product=ADIDAS ORIGINAL, email=Fidato@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at p1.StandAloneTest.submitordertest(StandAloneTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitordertest -->
+        <test-method is-config="true" signature="closedDriver()[pri:0, instance:p1.StandAloneTest@648c94da]" started-at="2023-07-23T19:20:39 IST" name="closedDriver" finished-at="2023-07-23T19:20:39 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedDriver -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:p1.StandAloneTest@648c94da]" started-at="2023-07-23T19:20:39 IST" name="LaunchApplication" finished-at="2023-07-23T19:20:41 IST" duration-ms="2042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="submitordertest(java.util.HashMap)[pri:0, instance:p1.StandAloneTest@648c94da]" started-at="2023-07-23T19:20:41 IST" name="submitordertest" data-provider="getData" finished-at="2023-07-23T19:20:45 IST" duration-ms="3142" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=123@Khan, product=IPHONE 13 PRO, email=fateh@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at p1.StandAloneTest.submitordertest(StandAloneTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitordertest -->
+        <test-method is-config="true" signature="closedDriver()[pri:0, instance:p1.StandAloneTest@648c94da]" started-at="2023-07-23T19:20:45 IST" name="closedDriver" finished-at="2023-07-23T19:20:45 IST" duration-ms="211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedDriver -->
+        <test-method signature="orderhistory(java.util.HashMap)[pri:0, instance:p1.StandAloneTest@648c94da]" started-at="2023-07-23T19:20:45 IST" name="orderhistory" finished-at="2023-07-23T19:20:45 IST" depends-on-methods="p1.StandAloneTest.submitordertest" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method p1.StandAloneTest.orderhistory() on instance p1.StandAloneTest@648c94da depends on not successfully finished methods 
+[p1.StandAloneTest.submitordertest() on instance p1.StandAloneTest@648c94da]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method p1.StandAloneTest.orderhistory() on instance p1.StandAloneTest@648c94da depends on not successfully finished methods 
+[p1.StandAloneTest.submitordertest() on instance p1.StandAloneTest@648c94da]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderhistory -->
+      </class> <!-- p1.StandAloneTest -->
+    </test> <!-- SubmitOrder -->
+  </suite> <!-- Suite -->
+</testng-results>
